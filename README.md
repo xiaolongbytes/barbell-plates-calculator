@@ -8,7 +8,7 @@
 2. Used create-react-app, then had to move files from the created folder to the root folder
     - Rename .js files to .jsx to prevent linting errors and file clarity
     - Lesson learned: use create-react-app first before creating the folder/repo to avoid having to move files around
-3. Installed react-router (https://reactrouter.com/en/main) to handle SPA routing and followed their tutorial [mostly](#alterations-to-the-react-router-tutorial)
+3. Installed [react-router](https://reactrouter.com/en/main) to handle SPA routing and followed their tutorial [mostly](#alterations-to-the-react-router-tutorial)
 4. Added ESLint and ESLint React to this project
 5. Created pages and component folders not because they're necessary, but because I like the organization
 6. Create the pages files first to make sure the routing works, then created components to build up the pages, starting with the higher level components.
