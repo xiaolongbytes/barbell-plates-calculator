@@ -1,14 +1,14 @@
-import { Outlet } from "react-router-dom"
-import Navigation from "../components/Navigation"
+import { Outlet } from 'react-router-dom'
+import { Navigation } from '../components/Navigation'
 
-export default function Root() {
+export const Root = () => {
     return (
         <>
             <header>
                 <h1>Let's Lift!</h1>
             </header>
 
-            <Navigation/>
+            <Navigation />
 
             <main>
                 <Outlet />
@@ -17,8 +17,6 @@ export default function Root() {
             <footer>
                 <p>&copy; 2024 April Wang </p>
             </footer>
-
-
         </>
     )
 }

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
 
-export default function Navigation() {
+export const Navigation = () => {
     return (
         <nav>
             <ul>
@@ -15,5 +15,5 @@ export default function Navigation() {
                 </li>
             </ul>
         </nav>
-    )
-}
+    );
+};

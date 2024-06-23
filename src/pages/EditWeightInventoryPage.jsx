@@ -1,7 +1,12 @@
-export default function EditWeightInventoryPage() {
-    return(
+import { BarbellWeightPicker } from '../components/BarbellWeightPicker';
+import { WeightTable } from '../components/WeightTable';
+
+export const EditWeightInventoryPage = () => {
+    return (
         <>
-        <h1>Edit Inventory Page</h1>
+            <h2>Edit Inventory Page</h2>
+            <BarbellWeightPicker />
+            <WeightTable />
         </>
-    )
-}
+    );
+};

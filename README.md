@@ -9,7 +9,9 @@
     - Rename .js files to .jsx to prevent linting errors and file clarity
     - Lesson learned: use create-react-app first before creating the folder/repo to avoid having to move files around
 3. Installed [react-router](https://reactrouter.com/en/main) to handle SPA routing and followed their tutorial [mostly](#alterations-to-the-react-router-tutorial)
-4. Added ESLint and ESLint React to this project
+4. Added [ESLint](https://eslint.org/), [ESLint React](https://www.npmjs.com/package/eslint-plugin-react), and [Prettier](https://prettier.io/docs/en/integrating-with-linters.html) to this project
+    - ESLint is a linter
+    - Prettier fixes the styling errors
 5. Created pages and component folders not because they're necessary, but because I like the organization
 6. Create the pages files first to make sure the routing works, then created components to build up the pages, starting with the higher level components.
 
@@ -22,6 +24,10 @@
 
 ## The Root Route
 1. This will be the global layout which will have the header/footer/navigation
+2. DO NOT use the pattern `export default function Root() {}` pattern. Instead use `export const Name = () => {}`. 
+    - Makes it easier to find references within editor and also helps IntelliSence find things easier compared to `export default`
+    - Aliasing components must be done explicitly on import
+    - Utilizes arrow functions for better scope management
 
 ## Client Side Routing
 1. When building nav bar, use `<Link>`

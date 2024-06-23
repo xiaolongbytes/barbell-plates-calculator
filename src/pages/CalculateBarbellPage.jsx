@@ -1,7 +1,7 @@
-export default function CalculateBarbellPage() {
-    return(
+export const CalculateBarbellPage = () => {
+    return (
         <>
-        <h1>Calculate Barbell Page</h1>
+            <h1>Calculate Barbell Page</h1>
         </>
-    )
-}
+    );
+};
