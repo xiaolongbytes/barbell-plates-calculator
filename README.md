@@ -2,6 +2,10 @@
 1. Input form for available weights to be used to calculate plate configurations.
 2. Tool to calculate plate configurations to produce a desired total weight.
 
+# Future Features?:
+1. Have it calculate plate configurations for an entire warm-up + workout circuit at once.
+2. Toggle to chose between kilograms and pounds.
+
 # How I built this app and lessons learned:
 1. Created repo in GitHub and then cloned it locally.
     - Lessons learned from previous projects: Created a .gitignore with the Node template
@@ -12,8 +16,10 @@
 4. Added [ESLint](https://eslint.org/), [ESLint React](https://www.npmjs.com/package/eslint-plugin-react), and [Prettier](https://prettier.io/docs/en/integrating-with-linters.html) to this project
     - ESLint is a linter
     - Prettier fixes the styling errors
-5. Created pages and component folders not because they're necessary, but because I like the organization
+5. Created pages, data, and component folders not because they're necessary, but because I like the organization
 6. Create the pages files first to make sure the routing works, then created components to build up the pages, starting with the higher level components.
+7. Separate constants into data/constants.js file and state management functions into data/state.js
+8. Add styling!
 
 # Alterations to the react-router tutorial:
 ## Adding a router
