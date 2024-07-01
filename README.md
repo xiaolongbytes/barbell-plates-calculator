@@ -1,3 +1,7 @@
+# Why build this app?
+1. I wanted a project to practice React and React Router
+2. Trying to calculate barbell weights and figuring out required plates while lifting was very error-prone. 
+
 https://github.com/xiaolongbytes/barbell-plates-calculator/assets/108032964/317b43b7-d206-4951-9fa3-b959de683f13
 
 # Features:
