@@ -1,4 +1,4 @@
-https://github.com/xiaolongbytes/barbell-plates-calculator/assets/108032964/484ecf74-af5e-4cbb-95b1-9abf1aa54079
+https://github.com/xiaolongbytes/barbell-plates-calculator/assets/108032964/317b43b7-d206-4951-9fa3-b959de683f13
 
 # Features:
 1. Input form for available weights to be used to calculate plate configurations.
@@ -23,6 +23,12 @@ https://github.com/xiaolongbytes/barbell-plates-calculator/assets/108032964/484e
 6. Create the pages files first to make sure the routing works, then created components to build up the pages, starting with the higher level components.
 7. Separate constants into data/constants.js file and state management functions into data/state.js
 8. Add styling!
+
+# Data Flow Diagram
+<img width="794" alt="Data Flow Diagram" src="https://github.com/xiaolongbytes/barbell-plates-calculator/assets/108032964/92f2f8d0-3a49-4bac-9821-3dfed9caf103">
+
+# Entity Relation Diagram
+<img width="794" alt="Data Flow Diagram" src="https://github.com/xiaolongbytes/barbell-plates-calculator/assets/108032964/46dbf262-d0ab-4e87-94be-4059d47e72d8">
 
 # Alterations to the react-router tutorial:
 ## Adding a router
