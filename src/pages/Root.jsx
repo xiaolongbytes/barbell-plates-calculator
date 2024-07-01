@@ -1,14 +1,16 @@
-import { Outlet } from 'react-router-dom'
-import { Navigation } from '../components/Navigation'
+import { Outlet } from 'react-router-dom';
+import { Navigation } from '../components/Navigation';
 
 export const Root = () => {
     return (
-        <>
-            <header>
-                <h1>Let's Lift!</h1>
-            </header>
+        <div className="page">
+            <div className="top">
+                <header>
+                    <h1>Let's Lift!</h1>
+                </header>
 
-            <Navigation />
+                <Navigation />
+            </div>
 
             <main>
                 <Outlet />
@@ -17,6 +19,6 @@ export const Root = () => {
             <footer>
                 <p>&copy; 2024 April Wang </p>
             </footer>
-        </>
-    )
-}
+        </div>
+    );
+};

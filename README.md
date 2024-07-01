@@ -5,6 +5,7 @@
 # Future Features?:
 1. Have it calculate plate configurations for an entire warm-up + workout circuit at once.
 2. Toggle to chose between kilograms and pounds.
+3. Allow users to remove plate weights from the weight inventory table and add custom plate weights.
 
 # How I built this app and lessons learned:
 1. Created repo in GitHub and then cloned it locally.

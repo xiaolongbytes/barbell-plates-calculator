@@ -1,13 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Changa:wght@200..800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FBEEEA;
+  color: #040201;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 300px;
+  display:flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+nav ul {
+  display:flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+nav li {
+  display: block;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #040201;
+  font-weight: bold;
+  
+}
+
+nav li:hover {
+  background-color: #F2C9BA;
+}
+
+nav a.active {
+  background-color: #853619;
+  color: white;
+}
+
+h1 {
+  font-family: "Changa One", sans-serif;
+}
+
+h2, h3 {
+  font-family: "Changa", sans-serif;
 }

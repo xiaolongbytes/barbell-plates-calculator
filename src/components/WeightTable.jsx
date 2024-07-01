@@ -3,11 +3,6 @@ import { DEFAULT_WEIGHTS } from '../data/constants';
 import { useState, useEffect, useCallback } from 'react';
 import { WeightRow } from './WeightRow';
 
-// In order to sort
-const compareNumbers = (a, b) => {
-    return parseFloat(a) - parseFloat(b);
-};
-
 export const WeightTable = () => {
     // Render using the default weights
     const [weightInventory, setWeightInventory] = useState(DEFAULT_WEIGHTS);
@@ -15,10 +10,12 @@ export const WeightTable = () => {
     // Update weightInventory when row quantity is changed
     const onWeightChange = useCallback(
         (weight, quantity) => {
-            setWeightInventory({
+            const newWeightInventory = {
                 ...weightInventory,
                 [weight]: quantity,
-            });
+            };
+            setWeightInventory(newWeightInventory);
+            updateWeightInventory(newWeightInventory);
         },
         [weightInventory]
     );
@@ -42,7 +39,9 @@ export const WeightTable = () => {
                 </thead>
                 <tbody>
                     {Object.entries(weightInventory)
-                        .sort(compareNumbers)
+                        .sort(([a], [b]) => {
+                            return parseFloat(a) - parseFloat(b);
+                        })
                         .map(([weight, quantity]) => (
                             <WeightRow
                                 weight={weight}
@@ -53,14 +52,6 @@ export const WeightTable = () => {
                         ))}
                 </tbody>
             </table>
-
-            <button
-                type="submit"
-                onClick={() => updateWeightInventory(weightInventory)}
-                id="submit"
-            >
-                Update Inventory
-            </button>
         </>
     );
 };

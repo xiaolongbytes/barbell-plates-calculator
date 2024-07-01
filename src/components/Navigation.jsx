@@ -1,18 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const Navigation = () => {
     return (
         <nav>
             <ul>
-                <li>
+                {/* <li>
                     <Link to={`/`}>Home</Link>
+                </li> */}
+                <li>
+                    <NavLink to={`/`}>Find Plates for Desired Weights</NavLink>
                 </li>
                 <li>
-                    <Link to={`inventory`}>Edit Weights Inventory</Link>
+                    <NavLink to={`inventory`}>Edit Weights Inventory</NavLink>
                 </li>
-                <li>
-                    <Link to={`barbellcalculator`}>Calculate Barbell</Link>
-                </li>
+                {/* <li>
+                    <NavLink to={`barbellcalculator`}>Calculate Barbell</NavLink>
+                </li> */}
             </ul>
         </nav>
     );
