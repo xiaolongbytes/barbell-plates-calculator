@@ -1,3 +1,5 @@
+https://github.com/xiaolongbytes/barbell-plates-calculator/assets/108032964/484ecf74-af5e-4cbb-95b1-9abf1aa54079
+
 # Features:
 1. Input form for available weights to be used to calculate plate configurations.
 2. Tool to calculate plate configurations to produce a desired total weight.
