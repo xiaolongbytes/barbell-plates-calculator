@@ -12,7 +12,8 @@ https://github.com/xiaolongbytes/barbell-plates-calculator/assets/108032964/317b
 1. Add testing. What happens if the weight isn't possible with the plates available?
 2. Have it calculate plate configurations for an entire warm-up + workout circuit at once.
 3. Toggle to chose between kilograms and pounds.
-4. Allow users to remove plate weights from the weight inventory table and add custom plate weights.
+4. Deploy it!
+5. Allow users to remove plate weights from the weight inventory table and add custom plate weights.
 
 # How I built this app and lessons learned:
 1. Created repo in GitHub and then cloned it locally.
